@@ -5,6 +5,7 @@ export interface Location {
   phone: string
   hours: string
   hasOnlineOrdering: boolean
+  onlineOrderingUrl?: string
   description?: string
 }
 
@@ -16,6 +17,7 @@ export const locations: Location[] = [
     phone: "(559) 221-8000",
     hours: "Monday-Sunday: 8am-9pm",
     hasOnlineOrdering: true,
+    onlineOrderingUrl: "https://www.clover.com/online-ordering/huong-lan-9-fresno",
     description: "Our flagship location with full menu and online ordering available."
   },
   {

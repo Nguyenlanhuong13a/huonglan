@@ -64,10 +64,15 @@ export default function LocationsPage() {
                   >
                     Call Now
                   </a>
-                  {location.hasOnlineOrdering && (
-                    <button className="flex-1 bg-white dark:bg-gray-800 text-orange-600 border-2 border-orange-600 py-2 px-4 rounded-lg hover:bg-orange-50 dark:hover:bg-orange-900 transition-colors font-medium">
+                  {location.hasOnlineOrdering && location.onlineOrderingUrl && (
+                    <a
+                      href={location.onlineOrderingUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-white dark:bg-gray-800 text-orange-600 border-2 border-orange-600 py-2 px-4 rounded-lg hover:bg-orange-50 dark:hover:bg-orange-900 transition-colors font-medium text-center"
+                    >
                       Order Online
-                    </button>
+                    </a>
                   )}
                 </div>
               </div>
