@@ -3,6 +3,7 @@ import Image from "next/image"
 import { menuItems } from "@/lib/menu-data"
 import { locations } from "@/lib/locations-data"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import { FoodGallery } from "@/components/food-gallery"
 
 export default function HomePage() {
   const featuredItems = menuItems.filter(item => item.popular).slice(0, 3)
@@ -53,10 +54,10 @@ export default function HomePage() {
                 About <span className="text-gradient">Huong Lan</span>
               </h2>
               <p className="text-lg mb-6 text-gray-700 dark:text-gray-300 leading-relaxed fade-in-up stagger-3">
-                Our passion for food is only matched by our love for our community. We believe that food brings people together and we're proud to share a piece of our culture with everyone who visits us.
+                Our passion for food is only matched by our love for our community. We believe that food brings people together and we're proud to share a piece of our culture with everyone who orders from us.
               </p>
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed fade-in-up stagger-4">
-                Whether you're craving a delicious Banh Mi sandwich or want to try one of our other menu items, we invite you to come and experience the taste of Vietnam at Huong Lan.
+                Whether you're craving a delicious Banh Mi sandwich or want to try one of our other menu items, we invite you to order online or call ahead for pickup and experience the taste of Vietnam at Huong Lan.
               </p>
               <Link 
                 href="/contact" 
@@ -69,7 +70,7 @@ export default function HomePage() {
               <div className="relative">
                 <Image
                   src="/IMG_1773.png"
-                  alt="Huong Lan Restaurant family at market stall"
+                  alt="Huong Lan family at their traditional Vietnamese market stall - the humble beginnings of our restaurant"
                   width={600}
                   height={400}
                   className="rounded-3xl restaurant-shadow-lg hover:scale-105 transition-transform duration-500 smooth-rotate"
@@ -134,7 +135,8 @@ export default function HomePage() {
         </div>
       </section>
 
-
+      {/* Food Gallery */}
+      <FoodGallery />
 
       {/* Locations Preview */}
       <section className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-200">

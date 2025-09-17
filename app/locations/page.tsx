@@ -87,28 +87,21 @@ export default function LocationsPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Visit Us Today</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
             Each of our locations offers the same authentic Vietnamese flavors and warm hospitality. 
-            Whether you're dining in or taking out, we're committed to providing you with an exceptional experience.
+            Order online or call ahead for pickup - we're committed to providing you with an exceptional experience.
           </p>
           
-          <div className="grid md:grid-cols-3 gap-8 text-left">
+          <div className="grid md:grid-cols-2 gap-8 text-left">
             <div className="bg-white dark:bg-gray-700 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">Dine-In Experience</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">Online Ordering</h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Enjoy our full menu in a comfortable atmosphere with friendly service and authentic Vietnamese ambiance.
+                Order your favorite dishes online for quick pickup. Fresh ingredients and traditional recipes ready when you arrive.
               </p>
             </div>
             
             <div className="bg-white dark:bg-gray-700 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">Takeout & Delivery</h3>
+              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">Call Ahead Pickup</h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Order your favorite dishes for pickup or delivery. Fresh ingredients and traditional recipes delivered to your door.
-              </p>
-            </div>
-            
-            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">Catering Services</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Planning an event? We offer catering services for parties, meetings, and special occasions.
+                Call us directly to place your order and pick it up at your convenience. Fast, fresh, and ready to go.
               </p>
             </div>
           </div>
